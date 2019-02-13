@@ -19,6 +19,8 @@ PImage back;
 Kinect kinect;
 Log log;
 
+boolean test = true;
+
 int time = 0, bod = 0, est = 0;
 int imagen = 0;
 boolean pintar = true;
@@ -50,6 +52,7 @@ void draw() {
     tint(255, 220);
     image(kinect.GetMask(), 0, 0, width, height);
   }
+  if(test) {poner();}else {unir();}
 }
 
 PImage bg(String a) {
